@@ -55,9 +55,10 @@ export const FeedbackProvider = ({ children }) => {
     <FeedbackContext.Provider
       value={{
         feedback,
-        editFeedback,
         deleteFeedback,
         addFeedback,
+        editFeedback, // this is the function handler
+        feedbackEdit, // actual piece of state that holds the bool for the form
       }}
     >
       {children}
